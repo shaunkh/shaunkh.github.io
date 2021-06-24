@@ -11,8 +11,9 @@ function Navbar() {
   return (
     <>
       <style>
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bebas+Neue&family=Staatliches&display=swap');
-</style>
+        @import
+        url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;400&family=Bebas+Neue&display=swap');
+      </style>
       <nav>
         <img
           className="nav-logo"
