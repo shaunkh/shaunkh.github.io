@@ -23,7 +23,7 @@ nav {
     list-style: none;
     font-size: 30px;
     font-family: 'Barlow Condensed', sans-serif;
-    text-decoration: none;
+    
 }
 
 .nav-logo {
@@ -33,9 +33,16 @@ nav {
 .description {
     display: flex;
     width: 90%;
+    justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 400;
+}
+
+.page-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: 500;
 }
