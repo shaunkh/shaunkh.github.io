@@ -1,0 +1,36 @@
+.page-title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.page-description {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#container{
+    min-width: 500px;
+}
+
+#image-container {
+    padding: 10px;
+}
+
+#profile-image {
+    min-width: 10px;
+    max-width: 500px;
+    height: auto;
+}
+
+#writing-container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+#desc-container {
+    max-width: 1000px;
+    padding: 20px;
+}
+

@@ -6,7 +6,7 @@ function About() {
       <h1 className="page-title">About</h1>
       <div >
         <h3 className="description">
-          Hi my name's Shaun and I'm a software engineer.
+          This page is has my story in more detail.
         </h3>
       </div>
     </div>
