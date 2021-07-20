@@ -4,24 +4,32 @@ import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Blog from "./components/pages/Blog";
 import Footer from "./components/pages/Footer/Footer";
+import React from "react";
+import Helmet from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navbar></Navbar>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/blog" component={Blog} />
-        </Switch>
-        <div className="main-footer">
-          <Footer />
+const TITLE = "Shaun Khundker";
+class App extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+        <div className="App">
+          <Navbar></Navbar>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+            <Route path="/blog" component={Blog} />
+          </Switch>
+          <div className="main-footer">
+            <Footer />
+          </div>
         </div>
-      </div>
-    </Router>
-  );
+      </Router>
+    );
+  }
 }
 
 export default App;

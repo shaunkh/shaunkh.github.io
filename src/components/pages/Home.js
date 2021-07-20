@@ -3,6 +3,7 @@ import "./Pages.css";
 import shaunPicture from "Z:/CS Projects/shaunkh.github.io/src/imgs/Capture.png";
 
 function Home() {
+  
   return (
     <>
       <div id="container">
