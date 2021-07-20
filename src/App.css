@@ -1,34 +1,38 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 
 nav {
-  display: flex;
+  display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
-  max-height: 15vh;
   background: white;
-  color: black;
-  outline: 1px;
-  outline-color: black;
-  outline-style: solid;
   text-decoration: none;
+  width: 100%;
+  height: 132px;
 }
 
 .nav-links {
-  width: 50%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   list-style: none;
   font-size: 30px;
   font-family: "Barlow Condensed", sans-serif;
   text-decoration: none;
+
+  width: 100%;
+
+  padding: 0%;
+  display: inline-flex;
+  justify-content: space-around;
 }
 
 .nav-logo {
-  width: 7vw;
+  width: 132px;
+}
+
+.nav-div {
+  width: 30%;
+  align-items: center;
 }
 
 .description {

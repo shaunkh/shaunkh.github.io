@@ -6,7 +6,7 @@ import shaunLogo from "../imgs/Shaun Logo-02.png";
 function Navbar() {
   const navStyle = {
     color: "black",
-    textDecoration: 'none',
+    textDecoration: "none",
   };
 
   return (
@@ -24,14 +24,16 @@ function Navbar() {
           ></img>
         </Link>
 
-        <ul className="nav-links">
-          <Link style={navStyle} to="/about">
-            <li>About</li>
-          </Link>
-          <Link style={navStyle} to="/blog">
-            <li>Blog</li>
-          </Link>
-        </ul>
+        <div className="nav-div">
+          <ul className="nav-links">
+            <Link style={navStyle} to="/about">
+              <li>About</li>
+            </Link>
+            <Link style={navStyle} to="/blog">
+              <li>Blog</li>
+            </Link>
+          </ul>
+        </div>
       </nav>
     </>
   );
