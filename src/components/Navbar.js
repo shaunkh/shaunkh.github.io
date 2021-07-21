@@ -29,6 +29,9 @@ function Navbar() {
             <Link style={navStyle} to="/about">
               <li>About</li>
             </Link>
+            <Link style={navStyle} to="/work">
+              <li>Work</li>
+            </Link>
             <Link style={navStyle} to="/blog">
               <li>Blog</li>
             </Link>

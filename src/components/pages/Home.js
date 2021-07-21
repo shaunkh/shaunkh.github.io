@@ -19,8 +19,8 @@ function Home() {
         </div>
         <div id="desc-container">
           <h2 className="page-description">
-            Welcome to my website. I'm a senior at Northeastern University.
-            I study computer science and finance. My main interests are in blockchain and cryptocurrencies.
+            I'm a senior at Northeastern University majoring in Computer Science and Finance.
+            I love to talk about all things crypto, e-commerce, and esports.
           </h2>
         </div>
       </div>

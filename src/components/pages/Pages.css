@@ -10,6 +10,31 @@
     font-weight: 500;
 }
 
+.about-tldr {
+    display: inline-block;
+    list-style: disc;
+    text-align: left;
+}
+
+.about-desc {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-container {
+    min-width: 500px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
 #container{
     min-width: 500px;
     display: inline-flex;

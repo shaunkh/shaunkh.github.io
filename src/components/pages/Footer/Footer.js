@@ -25,9 +25,9 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
           <div className='footer-logo'>
-            <Link to='/' className='social-logo'>
+            {/* <Link to='/' className='social-logo'>
               <p>Shaun Khundker</p>
-            </Link>
+            </Link> */}
           </div>
           <div className='social-icons'>
             <Link
@@ -51,7 +51,7 @@ function Footer() {
             <Link
               className='social-icon-link'
               to={
-                '//twitter.com/uhitsshaun'
+                '//twitter.com/shaunkhundker'
               }
               target='_blank'
               aria-label='Twitter'
