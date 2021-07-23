@@ -5,7 +5,8 @@ import {
   FaInstagram,
   FaYoutube,
   FaTwitter,
-  FaLinkedin
+  FaLinkedin,
+  FaGithub
 } from 'react-icons/fa';
 
 function Footer() {
@@ -67,6 +68,16 @@ function Footer() {
               aria-label='LinkedIn'
             >
               <FaLinkedin />
+            </Link>
+            <Link
+              className='social-icon-link'
+              to={
+                'https://github.com/shaunkh/'
+              }
+              target='_blank'
+              aria-label='Github'
+            >
+              <FaGithub />
             </Link>
           </div>
         </div>
