@@ -23,6 +23,13 @@ function Home() {
             I love to talk about all things crypto, e-commerce, and esports.
           </h2>
         </div>
+
+        <div id="desc-container">
+          <h2 className="page-description">
+            Contact me <a className="link-deco" href="https://linktr.ee/shaunkhundker"><b>here</b></a>!
+          </h2>
+        </div>
+
       </div>
     </>
   );

@@ -2,12 +2,12 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
-//import Blog from "./components/pages/Blog";
 import Work from "./components/pages/Work";
 import Footer from "./components/pages/Footer/Footer";
 import React from "react";
 import Helmet from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NotFound from "./components/pages/NotFound";
 
 const TITLE = "Shaun Khundker";
 class App extends React.Component {
@@ -32,6 +32,7 @@ class App extends React.Component {
                 }}
               />
               <Route path="/work" component={Work} />
+              <Route component={NotFound} />
             </Switch>
           </div>
           <Footer />

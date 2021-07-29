@@ -83,6 +83,11 @@ function Work() {
         </p>
         </ul>
       </div>
+      <div className="about-div">
+        <p>
+        {" "}
+        </p>
+      </div>
     </div>
   );
 }
