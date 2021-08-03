@@ -8,7 +8,6 @@ function Home() {
     <>
       <div id="container">
         <div id="writing-container">
-          {/* just ac ommment */}
           <h1 className="page-title">Hi my name is Shaun.</h1>
         </div>
         <div id="my-image">
