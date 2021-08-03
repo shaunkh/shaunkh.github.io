@@ -24,7 +24,6 @@ class App extends React.Component {
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
               <Route
-              // hello
                 path="/blog"
                 component={() => {
                   window.location.href =
