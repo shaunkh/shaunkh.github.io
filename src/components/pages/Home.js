@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pages.css";
-import shaunPicture from "Z:/CS Projects/shaunkh.github.io/src/imgs/Capture.png";
+import shaunPicture from "Z:/CS Projects/shaunkh.github.io/src/imgs/shaunpfpnobg.png";
 
 function Home() {
   
@@ -17,15 +17,15 @@ function Home() {
             src={shaunPicture}
           ></img>
         </div>
-        <div id="desc-container">
+        <div className="desc-container-no-margin">
           <h2 className="page-description">
             I'm a senior at Northeastern University majoring in Computer Science and Finance.
             I love to talk about all things crypto, e-commerce, and esports.
           </h2>
         </div>
 
-        <div id="desc-container">
-          <h2 className="page-description">
+        <div className="desc-container-no-margin">
+          <h2 className="page-description page-description-two">
             Contact me <a className="link-deco" href="https://linktr.ee/shaunkhundker"><b>here</b></a>!
           </h2>
         </div>

@@ -20,6 +20,11 @@ a:hover {
     font-weight: 500;
 }
 
+.page-description-two {
+    padding: 0px;
+    margin: 10px;
+}
+
 .about-tldr {
     display: inline-block;
     list-style: disc;
@@ -68,7 +73,7 @@ a:hover {
 }
 
 #writing-container {
-    max-width: 1000px;
+    width: 100%;
     padding: 20px;
 }
 
@@ -77,3 +82,6 @@ a:hover {
     padding: 20px;
 }
 
+.desc-container-no-margin {
+    padding: 0px;
+}
