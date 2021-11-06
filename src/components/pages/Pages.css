@@ -41,6 +41,7 @@ a:hover {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 20px;
   font-weight: 400;
+  margin-bottom: auto;
 }
 
 .about-container {
@@ -48,7 +49,6 @@ a:hover {
     display: inline-flex;
     justify-content: center;
     flex-direction: row;
-    
 }
 
 .about-div {

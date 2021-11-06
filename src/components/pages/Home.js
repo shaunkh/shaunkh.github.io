@@ -1,6 +1,6 @@
 import React from "react";
 import "./Pages.css";
-import shaunPicture from "Z:/CS Projects/shaunkh.github.io/src/imgs/shaunpfpnobg.png";
+import pfp from "../assets/shaunPFP.png"
 
 function Home() {
   
@@ -14,7 +14,7 @@ function Home() {
           <img
             id="profile-image"
             alt="Shaun Khundker's Headshot"
-            src={shaunPicture}
+            src={pfp}
           ></img>
         </div>
         <div className="desc-container-no-margin">
