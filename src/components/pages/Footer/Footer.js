@@ -24,11 +24,6 @@ function Footer() {
       </div> */}
       <section className='social-media'>
         <div className='social-media-wrap'>
-          <div className='footer-logo'>
-            {/* <Link to='/' className='social-logo'>
-              <p>Shaun Khundker</p>
-            </Link> */}
-          </div>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
