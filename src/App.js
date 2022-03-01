@@ -23,14 +23,6 @@ class App extends React.Component {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/about" component={About} />
-              <Route
-                path="/blog"
-                component={() => {
-                  window.location.href =
-                    "https://shaunkh.xyz";
-                  return null;
-                }}
-              />
               <Route path="/work" component={Work} />
               <Route component={NotFound} />
             </Switch>

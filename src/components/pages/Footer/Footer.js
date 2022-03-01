@@ -3,7 +3,6 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 import {
   FaInstagram,
-  FaYoutube,
   FaTwitter,
   FaLinkedin,
   FaGithub
@@ -42,16 +41,6 @@ function Footer() {
             <Link
               className='social-icon-link'
               to={
-                '//www.youtube.com/channel/UCqiyPaxyP63Aze9Mq0zj2Lg'
-              }
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <FaYoutube />
-            </Link>
-            <Link
-              className='social-icon-link'
-              to={
                 '//twitter.com/shaunkhundker'
               }
               target='_blank'
@@ -72,7 +61,7 @@ function Footer() {
             <Link
               className='social-icon-link'
               to={
-                'https://github.com/shaunkh/'
+                '//www.github.com/shaunkh/'
               }
               target='_blank'
               aria-label='Github'
