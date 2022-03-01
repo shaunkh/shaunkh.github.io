@@ -27,7 +27,7 @@ class App extends React.Component {
                 path="/blog"
                 component={() => {
                   window.location.href =
-                    "http://shaunkhundkerblog.wordpress.com/";
+                    "https://shaunkh.xyz";
                   return null;
                 }}
               />
