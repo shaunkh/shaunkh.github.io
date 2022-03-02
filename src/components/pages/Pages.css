@@ -11,18 +11,14 @@ a:hover {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 50px;
     font-weight: 500;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .page-description {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 30px;
     font-weight: 500;
-}
-
-.page-description-two {
-    margin-top: 0%;
-    padding: 0px;
+    margin: 0;
 }
 
 .about-tldr {
@@ -57,8 +53,8 @@ a:hover {
 
 #container{
     min-width: 500px;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
 }
 
@@ -66,16 +62,19 @@ a:hover {
     padding: 10px;
 }
 
+#my-image {
+    align-items: left;
+}
+
 #profile-image {
-    min-width: 10px;
-    max-width: 500px;
+    min-width: 100px;
+    max-width: 50%;
     width: auto;
     height: auto;
 }
 
 #writing-container {
     width: 100%;
-    padding: 20px;
 }
 
 #desc-container {
@@ -85,4 +84,21 @@ a:hover {
 
 .desc-container-no-margin {
     padding: 0px;
+}
+
+@media screen and (max-width: 820px) {
+    #container{
+        min-width: 100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about-container {
+        min-width: 100px;
+        display: inline-flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
 }
