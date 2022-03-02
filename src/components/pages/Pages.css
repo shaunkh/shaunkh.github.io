@@ -1,5 +1,5 @@
 .link-deco {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -11,7 +11,8 @@ a:hover {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 50px;
     font-weight: 500;
-    margin: 0;
+    color: white;
+    margin-left: 5vw;
 }
 
 .page-description {
@@ -19,12 +20,14 @@ a:hover {
     font-size: 30px;
     font-weight: 500;
     margin: 0;
+    color: white;
 }
 
 .about-tldr {
     display: inline-block;
     list-style: disc;
     text-align: left;
+    color: white;
 }
 
 .about-desc {
@@ -38,6 +41,7 @@ a:hover {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: auto;
+  color: white;
 }
 
 .about-container {
@@ -63,17 +67,25 @@ a:hover {
 }
 
 #my-image {
-    align-items: left;
+    display: flex;
 }
 
 #profile-image {
-    min-width: 100px;
-    max-width: 50%;
+    min-width: 200px;
+    max-width: 40%;
     width: auto;
     height: auto;
 }
 
 #writing-container {
+    display: flex;
+    width: 100%;
+}
+
+#about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
 }
 

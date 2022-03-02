@@ -17,18 +17,17 @@ function Navbar() {
       </style>
       <nav>
         <Link to="/">
-          <img
-            className="nav-logo"
-            alt="Shaun Khundker's Logo"
-            src={shaunLogo}
-          ></img>
+          <div>
+            <img
+              className="nav-logo"
+              alt="Shaun Khundker's Logo"
+              src={shaunLogo}
+            ></img>
+          </div>
         </Link>
 
         <div className="nav-div">
           <ul className="nav-links">
-            <Link style={navStyle} to="/about">
-              <li>About</li>
-            </Link>
             <Link style={navStyle} to="/work">
               <li>Work</li>
             </Link>
