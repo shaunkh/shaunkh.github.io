@@ -12,7 +12,7 @@ a:hover {
     font-size: 50px;
     font-weight: 500;
     color: white;
-    margin-left: 5vw;
+    margin: 0 0 0 0;
 }
 
 .page-description {
@@ -21,6 +21,37 @@ a:hover {
     font-weight: 500;
     margin: 0;
     color: white;
+}
+
+.title {
+    height: 50px;
+}
+
+.title-wrapper {
+    height: 100%;
+    animation: move 6s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    33% {
+        transform: translateY(-50);
+    }
+    66% {
+        transform: translateY(-100);
+    }
+    100% {
+        transform: translateY(-150);
+    }
+}
+
+.title-item {
+    height: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: purple;
+    display: flex;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
 .about-tldr {
@@ -75,6 +106,7 @@ a:hover {
     max-width: 40%;
     width: auto;
     height: auto;
+    object-fit: cover;
 }
 
 #writing-container {
