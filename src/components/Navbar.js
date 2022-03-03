@@ -5,7 +5,7 @@ import shaunLogo from "../imgs/Shaun Logo-02.png";
 
 function Navbar() {
   const navStyle = {
-    color: "black",
+    color: "white",
     textDecoration: "none",
   };
 
@@ -30,6 +30,9 @@ function Navbar() {
           <ul className="nav-links">
             <Link style={navStyle} to="/work">
               <li>Resume</li>
+            </Link>
+            <Link style={navStyle} to={{ pathname: "https://shaunkh.xyz" }} target="_blank">
+            <li>Blog</li>
             </Link>
           </ul>
         </div>

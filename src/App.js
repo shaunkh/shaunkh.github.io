@@ -9,12 +9,11 @@ import NotFound from "./components/pages/NotFound";
 const TITLE = "Shaun Khundker";
 class App extends React.Component {
   componentDidMount() {
-    document.title = "Shaun's Website"
+    document.title = TITLE;
   }
   render() {
     return (
       <Router>
-        <title>{TITLE}</title>
         <div className="App">
           <div id="body-format">
             <Navbar></Navbar>
