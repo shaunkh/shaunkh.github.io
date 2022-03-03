@@ -17,7 +17,7 @@ function Navbar() {
       </style>
       <nav>
         <Link to="/">
-          <div>
+          <div className="nav-div-p">
             <img
               className="nav-logo"
               alt="Shaun Khundker's Logo"

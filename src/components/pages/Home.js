@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <div id="container">
-        <div id="my-image">
+        <div id="homepage">
           <img
             id="profile-image"
             alt="Shaun Khundker's Headshot"
