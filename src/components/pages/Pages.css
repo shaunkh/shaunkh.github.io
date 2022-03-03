@@ -1,5 +1,5 @@
 .link-deco {
-    color: white;
+    color: #D100FF;
     text-decoration: none;
 }
 
@@ -13,45 +13,57 @@ a:hover {
     font-weight: 500;
     color: white;
     margin: 0 0 0 0;
+    text-align: left;
 }
 
 .page-description {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 30px;
     font-weight: 500;
-    margin: 0;
     color: white;
+    text-align: left;
+    margin: 0 0 1rem 0;
+}
+
+.title-main {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-content: center;
 }
 
 .title {
-    height: 50px;
+    height: 60px;
+    overflow: hidden;
 }
 
 .title-wrapper {
     height: 100%;
-    animation: move 6s ease-in-out infinite alternate;
+    animation: roll 6s ease-in-out infinite alternate;
 }
 
-@keyframes move {
+@keyframes roll {
     33% {
-        transform: translateY(-50);
+        transform: translateY(-60px);
     }
+
     66% {
-        transform: translateY(-100);
+        transform: translateY(-120px);
     }
     100% {
-        transform: translateY(-150);
+        transform: translateY(-180px);
     }
 }
 
 .title-item {
-    height: 50px;
-    font-size: 30px;
+    height: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
     font-weight: 500;
-    color: purple;
+    color: #D100FF;
     display: flex;
     align-items: center;
-    font-family: "Barlow Condensed", sans-serif;
+
 }
 
 .about-tldr {
@@ -99,6 +111,7 @@ a:hover {
 
 #my-image {
     display: flex;
+    object-fit: cover;
 }
 
 #profile-image {
