@@ -16,6 +16,14 @@ a:hover {
     text-align: left;
 }
 
+.w-title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    color: white;
+    margin: 0 0 0 0;
+}
+
 .page-description {
     font-family: "Barlow Condensed", sans-serif;
     font-size: 30px;
@@ -87,16 +95,40 @@ a:hover {
   color: white;
 }
 
-.about-container {
-    min-width: 500px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
 .about-div {
     padding: 0;
 }
+  
+  /* Social Icons */
+  .social-icon-link {
+    color: #fff;
+    font-size: 24px;
+    padding-right: 1%;
+  }
+  
+  .social-media {
+    width: 100%;
+  }
+  
+  .social-media-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 3px;
+  }
+  
+  .website-rights {
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
 
 #container{
     min-width: 500px;
@@ -131,6 +163,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     width: 100%;
 }
 
@@ -157,5 +190,23 @@ a:hover {
         justify-content: center;
         flex-direction: row;
     }
+
+    .btn {
+        width: 100%;
+      }
+    
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 3px;
+      }
+    
+      .footer-link-wrapper {
+        flex-direction: column;
+      }
+    
+      .social-media-wrap {
+        flex-direction: column;
+      }
     
 }

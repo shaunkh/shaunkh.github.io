@@ -29,7 +29,7 @@ function Navbar() {
         <div className="nav-div">
           <ul className="nav-links">
             <Link style={navStyle} to="/work">
-              <li>Work</li>
+              <li>Resume</li>
             </Link>
           </ul>
         </div>

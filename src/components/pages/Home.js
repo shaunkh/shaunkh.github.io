@@ -1,6 +1,14 @@
 import React from "react";
 import "./Pages.css";
+import '../pages/Footer/Footer.css';
+import { Link } from 'react-router-dom';
 import pfp from "../assets/shaunPFP.png";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaGithub
+} from 'react-icons/fa';
 
 function Home() {
   return (
@@ -13,7 +21,7 @@ function Home() {
             src={pfp}
           ></img>
           <div id="about-container">
-            <h1 className="page-title">Hi, my name is Shaun Khundker.</h1>
+            <h1 className="page-title">Hi, my name is <b>Shaun Khundker</b>.</h1>
             <div className="title-main">
             <pre className="page-title">I like to </pre>
               <div className="title">
@@ -25,15 +33,53 @@ function Home() {
                 </div>
               </div>
             </div>
-            <h2 className="page-description">I spend any free time I get researching
-            DeFi protocols, buying NFTs and building things I find cool. I also like to play
-            guitar and race.</h2>
-            <h2 className="page-description">
-              Contact me{" "}
-              <a className="link-deco" href="https://linktr.ee/shaunkhundker">
-                <b>here</b>
-              </a>
-            </h2>
+            <h2 className="page-description">I spend any free time I get looking into
+            DeFi protocols, NFTs and building things I find cool. I also like to play
+            guitar and video games.</h2>
+            <section className='social-media'>
+        <div className='social-media-wrap'>
+          <div className='social-icons'>
+            <Link
+              className='social-icon-link'
+              to='//www.instagram.com/shaunkhundker/'
+              target='_blank'
+              aria-label='Instagram'
+            >
+              <FaInstagram />
+            </Link>
+            <Link
+              className='social-icon-link'
+              to={
+                '//twitter.com/shaunkhundker'
+              }
+              target='_blank'
+              aria-label='Twitter'
+            >
+              <FaTwitter />
+            </Link>
+            <Link
+              className='social-icon-link'
+              to={
+                '//www.linkedin.com/in/shaun-khundker/'
+              }
+              target='_blank'
+              aria-label='LinkedIn'
+            >
+              <FaLinkedin />
+            </Link>
+            <Link
+              className='social-icon-link'
+              to={
+                '//www.github.com/shaunkh/'
+              }
+              target='_blank'
+              aria-label='Github'
+            >
+              <FaGithub />
+            </Link>
+          </div>
+        </div>
+      </section>
           </div>
         </div>
       </div>

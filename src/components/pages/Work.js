@@ -3,21 +3,7 @@ import React from "react";
 function Work() {
   return (
     <div>
-      <h1 className="page-title">Technical Skills</h1>
-      <div className="about-div">
-        <ul className="about-tldr">
-          <p>
-            <b>Programming Languages</b>: Java, HTML/CSS, JavaScript,
-            TypeScript, Python, R, SQL
-          </p>
-          <p>
-            <b>Tools/Frameworks</b>: Git, MongoDB, Express, React, NodeJS,
-            ActiveDocs, Tableau
-          </p>
-        </ul>
-      </div>
-
-      <h1 className="page-title">Work Experience</h1>
+      <h1 className="w-title">Work Experience</h1>
       <div className="about-div">
         <ul className="about-tldr">
           <p>
@@ -44,7 +30,7 @@ function Work() {
         </ul>
       </div>
 
-      <h1 className="page-title">Notable Projects and Experiences</h1>
+      <h1 className="w-title">Notable Projects and Experiences</h1>
       <div className="about-div">
         <ul className="about-tldr">
           <p>
@@ -60,33 +46,14 @@ function Work() {
           </p>
         </ul>
       </div>
-      <h1 className="page-title">Education</h1>
+      <h1 className="w-title">Education</h1>
       <div className="about-div">
         <ul className="about-tldr">
           <p>
-            Pursuing Computer Science and Finance Degree at{" "}
+            Computer Science and Finance Degree at{" "}
             <b>Northeastern University</b> in Boston, MA
           </p>
-          <p>
-            <b>Activities</b>: Dean's List (All Semesters), AASIA Mentoring
-            Program Mentor and Co-chair, Pi Delta Psi Fraternity
-          </p>
         </ul>
-      </div>
-
-      <h1 className="page-title">Interests</h1>
-      <div className="about-div">
-        <ul className="about-tldr">
-        <p>
-        Data Analytics, Guitar, Piano, Music Production, Blockchain,
-            eSports, Equity Trading
-        </p>
-        </ul>
-      </div>
-      <div className="about-div">
-        <p>
-        {" "}
-        </p>
       </div>
     </div>
   );
