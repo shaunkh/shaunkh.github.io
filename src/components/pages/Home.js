@@ -1,6 +1,5 @@
 import React from "react";
 import "./Pages.css";
-import '../pages/Footer/Footer.css';
 import { Link } from 'react-router-dom';
 import pfp from "../assets/shaunPFP.png";
 import {
