@@ -25,7 +25,7 @@ function Home() {
                   <div className="title-item">build.</div>
                   <div className="title-item">research.</div>
                   <div className="title-item">write.</div>
-                  <div className="title-item">trade crypto.</div>
+                  <div className="title-item">trade.</div>
                 </div>
               </div>
             </div>
@@ -35,7 +35,7 @@ function Home() {
               games.
             </h2>
             <h2 className="page-description">
-              Feel free to message me about anything.
+              Contact me here:
             </h2>
             <section className="social-media">
               <div className="social-media-wrap">
