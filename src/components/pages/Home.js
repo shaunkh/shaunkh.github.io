@@ -1,74 +1,75 @@
-import React from "react";
-import "./Pages.css";
-import { Link } from "react-router-dom";
-import pfp from "../assets/shaunPFP.png";
-import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import React from 'react';
+import './Pages.css';
+import { Link } from 'react-router-dom';
+import pfp from '../assets/shaunPFP.png';
+import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function Home() {
   return (
     <>
-      <div id="container">
-        <div id="homepage">
+      <div id='container'>
+        <div id='homepage'>
           <img
-            id="profile-image"
+            id='profile-image'
             alt="Shaun Khundker's Headshot"
             src={pfp}
           ></img>
-          <div id="about-container">
-            <h1 className="page-title">
+          <div id='about-container'>
+            <h1 className='page-title'>
               Hi, my name is <b>Shaun Khundker</b>.
             </h1>
-            <div className="title-main">
-              <pre className="page-title">I like to </pre>
-              <div className="title">
-                <div className="title-wrapper">
-                  <div className="title-item">build.</div>
-                  <div className="title-item">research.</div>
-                  <div className="title-item">write.</div>
-                  <div className="title-item">trade.</div>
+            <div className='title-main'>
+              <pre className='page-title'>I like to </pre>
+              <div className='title'>
+                <div className='title-wrapper'>
+                  <div className='title-item'>code.</div>
+                  <div className='title-item'>build.</div>
+                  <div className='title-item'>write.</div>
+                  <div className='title-item'>trade.</div>
                 </div>
               </div>
             </div>
-            <h2 className="page-description">
-              I spend any free time I get looking into DeFi protocols, NFTs and
-              building things I find cool. I also like to play guitar and video
-              games.
+            <h2 className='page-description'>
+              Software engineer currently building at{' '}
+              <a href='https://openguild.finance/'>OpenGuild</a>
             </h2>
-            <h2 className="page-description">
-              Contact me here:
+            <h2 className='page-description'>
+              Majority of my time is spent in crypto. I like to play guitar as
+              well.
             </h2>
-            <section className="social-media">
-              <div className="social-media-wrap">
-                <div className="social-icons">
+            <h2 className='page-description'>Contact me here</h2>
+            <section className='social-media'>
+              <div className='social-media-wrap'>
+                <div className='social-icons'>
                   <Link
-                    className="social-icon-link"
-                    to="//www.instagram.com/shaunkhundker/"
-                    target="_blank"
-                    aria-label="Instagram"
+                    className='social-icon-link'
+                    to='//www.instagram.com/shaunkhundker/'
+                    target='_blank'
+                    aria-label='Instagram'
                   >
                     <FaInstagram />
                   </Link>
                   <Link
-                    className="social-icon-link"
-                    to={"//twitter.com/shaunkhundker"}
-                    target="_blank"
-                    aria-label="Twitter"
+                    className='social-icon-link'
+                    to={'//twitter.com/shaunkhundker'}
+                    target='_blank'
+                    aria-label='Twitter'
                   >
                     <FaTwitter />
                   </Link>
                   <Link
-                    className="social-icon-link"
-                    to={"//www.linkedin.com/in/shaun-khundker/"}
-                    target="_blank"
-                    aria-label="LinkedIn"
+                    className='social-icon-link'
+                    to={'//www.linkedin.com/in/shaun-khundker/'}
+                    target='_blank'
+                    aria-label='LinkedIn'
                   >
                     <FaLinkedin />
                   </Link>
                   <Link
-                    className="social-icon-link"
-                    to={"//www.github.com/shaunkh/"}
-                    target="_blank"
-                    aria-label="Github"
+                    className='social-icon-link'
+                    to={'//www.github.com/shaunkh/'}
+                    target='_blank'
+                    aria-label='Github'
                   >
                     <FaGithub />
                   </Link>

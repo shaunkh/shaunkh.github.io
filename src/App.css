@@ -24,13 +24,13 @@ nav {
 .nav-links {
   list-style: none;
   font-size: 30px;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   text-decoration: none;
   width: 100%;
 
   padding: 0%;
   display: inline-flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: white;
 }
 
@@ -57,7 +57,7 @@ nav {
   justify-content: center;
   padding-left: 5%;
   padding-right: 5%;
-  font-family: "Barlow Condensed", sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px;
   font-weight: 400;
 }
