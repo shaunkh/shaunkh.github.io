@@ -12,5 +12,5 @@ You will also see any lint errors in the console.
 
 ### `npm run deploy`
 
-Deploy it to GH Pages
+Deploy it to GitHub Pages
 
