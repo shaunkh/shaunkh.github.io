@@ -37,7 +37,9 @@ function Home() {
               I spend all my time in crypto building, farming and looking at
               JPEGs.
             </h2>
-            <h2 className="page-description">I like playing guitar and F1.</h2>
+            <h2 className="page-description">
+              I like playing guitar, skating and F1.
+            </h2>
             <h2 className="page-description">Currently based in Miami.</h2>
             <section className="social-media">
               <div className="social-media-wrap">

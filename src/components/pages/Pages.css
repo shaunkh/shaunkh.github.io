@@ -147,12 +147,18 @@ a:hover {
 #homepage {
   display: flex;
   object-fit: cover;
+  margin-top: 5%;
 }
 
 #profile-image {
   min-width: 300px;
   max-width: 40%;
   object-fit: cover;
+  border: white;
+  border-style: solid;
+  border-radius: 100%;
+  margin-left: 5%;
+  margin-bottom: 5%
 }
 
 #writing-container {
@@ -166,6 +172,8 @@ a:hover {
   align-items: flex-start;
   justify-content: center;
   width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #desc-container {

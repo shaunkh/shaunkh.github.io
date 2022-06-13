@@ -7,6 +7,9 @@ function Work() {
       <div className="about-div">
         <ul className="about-tldr">
           <p>
+            <b>Full Stack Software Engineer</b> at OpenGuild, <i>Miami, FL</i>
+          </p>
+          <p>
             <b>START Intern</b> at BNY Mellon, <i>Boston, MA</i>
           </p>
           <p>
@@ -34,11 +37,11 @@ function Work() {
       <div className="about-div">
         <ul className="about-tldr">
           <p>
-            <b>Vice President</b> at Huntington Angels Network, <i>Boston, MA</i>
+            <b>Vice President</b> at Huntington Angels Network,{" "}
+            <i>Boston, MA</i>
           </p>
           <p>
-            <b>Founder</b> of Free Internet Cafe,{" "}
-            <i>Boston, MA</i>
+            <b>Founder</b> of Free Internet Cafe, <i>Boston, MA</i>
           </p>
           <p>
             <b>Co-Chair</b> for Asian American Peer Mentoring Program,{" "}
