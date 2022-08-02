@@ -12,5 +12,4 @@ You will also see any lint errors in the console.
 
 ### `yarn run deploy`
 
-Deploy it to GitHub Pages
-
+Deploys it to GitHub Pages
