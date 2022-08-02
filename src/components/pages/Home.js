@@ -34,8 +34,8 @@ function Home() {
               <a href="https://openguild.finance/">OpenGuild</a>
             </h2>
             <h2 className="page-description">
-              I spend all my time in crypto building, farming and looking at
-              JPEGs.
+              I spend most of my time farming, building random stuff and looking
+              at JPEGs.
             </h2>
             <h2 className="page-description">
               I like playing guitar, skating and F1.
