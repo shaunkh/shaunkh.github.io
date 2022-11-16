@@ -31,7 +31,7 @@ function Home() {
             </div>
             <h2 className="page-description">
               I'm a software engineer at{" "}
-              <a href="https://openguild.finance/">OpenGuild</a>
+              <a href="https://useomni.xyz/">omni.xyz</a>
             </h2>
             <h2 className="page-description">
               I spend most of my time farming, building random stuff and looking
