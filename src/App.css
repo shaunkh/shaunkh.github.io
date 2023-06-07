@@ -27,11 +27,11 @@ nav {
   font-family: 'Barlow Condensed', sans-serif;
   text-decoration: none;
   width: 100%;
-
   padding: 0%;
   display: inline-flex;
   justify-content: space-evenly;
   color: white;
+  margin: 0 0 0 0 ;
 }
 
 .nav-logo {
@@ -40,8 +40,6 @@ nav {
   width: 20vw;
   height: auto;
   filter: invert(1);
-  margin-left: 15%;
-  margin-right: 2.5vw;
 }
 
 .nav-div {
