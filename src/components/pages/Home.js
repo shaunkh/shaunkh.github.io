@@ -19,7 +19,7 @@ function Home() {
               Hi, my name is <b>Shaun Khundker</b>.
             </h1>
             <div className="title-main">
-              <pre className="page-title">I like to </pre>
+              <pre className="page-title">I </pre>
               <div className="title">
                 <div className="title-wrapper">
                   <div className="title-item">code.</div>
@@ -31,16 +31,16 @@ function Home() {
             </div>
             <h2 className="page-description">
               I'm a software engineer at{" "}
-              <a href="https://useomni.xyz/">omni.xyz</a>
+              <a href="https://withstable.com/">Peregrine Exploration</a>
             </h2>
             <h2 className="page-description">
-              I spend most of my time farming, building random stuff and looking
-              at JPEGs.
+              I like looking at JPEGs, finding new farming strategies in DeFi
+              and building things.
             </h2>
             <h2 className="page-description">
-              I like playing guitar, skating and F1.
+              I also like playing guitar, skating and F1.
             </h2>
-            <h2 className="page-description">Currently based in Miami.</h2>
+            <h2 className="page-description">Currently based in Miami/NYC.</h2>
             <section className="social-media">
               <div className="social-media-wrap">
                 <div className="social-icons">
