@@ -30,8 +30,13 @@ function Home() {
               </div>
             </div>
             <h2 className="page-description">
-              I'm a software engineer at{" "}
+              I'm an engineer at{" "}
               <a href="https://withstable.com/">Peregrine Exploration</a>
+            </h2>
+            <h2 className="page-description">
+              Currently working mostly with <a>Rust</a>, <a>Go</a>, and{" "}
+              <a>Solidity</a> with <a>Vue.js</a> and <a>Next.js</a> on the
+              frontend.
             </h2>
             <h2 className="page-description">
               I like looking at JPEGs, finding new farming strategies in DeFi
