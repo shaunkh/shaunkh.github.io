@@ -2,7 +2,7 @@ import React from "react";
 
 function Work() {
   return (
-    <div>
+    <div style={{ paddingTop: "3em" }}>
       <h1 className="w-title">Work Experience</h1>
       <div className="about-div">
         <ul className="about-tldr">
