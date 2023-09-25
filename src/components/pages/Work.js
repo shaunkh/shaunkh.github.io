@@ -7,7 +7,7 @@ function Work() {
       <div className="about-div">
         <ul className="about-tldr">
           <p>
-            <b>Full Stack Software Engineer</b> at OpenGuild, <i>Miami, FL</i>
+            <b>Full Stack Software Engineer</b> at Peregrine Exploration, <i>New York, NY</i>
           </p>
           <p>
             <b>START Intern</b> at BNY Mellon, <i>Boston, MA</i>
