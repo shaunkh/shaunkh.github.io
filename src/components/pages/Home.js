@@ -30,8 +30,7 @@ function Home() {
               </div>
             </div>
             <h2 className="page-description">
-              I'm an engineer at{" "}
-              <a href="https://withstable.com/">Peregrine Exploration</a>
+              I'm an engineer at <a href="">Elixir Network</a>
             </h2>
             <h2 className="page-description">
               Currently working mostly with <a>Rust</a>, <a>Go</a>, and{" "}
