@@ -22,9 +22,9 @@ export default function Home() {
           <div className="z-10 flex w-full justify-center">
             <div className="flex w-1/2 justify-center text-xl space-x-4">
               {/* TODO add work */}
-              <Link href="/" target="_blank">
+              {/* <Link href="/" target="_blank">
                 <h1>Work</h1>
-              </Link>
+              </Link> */}
               <a href="https://shaunkh.xyz/" target="_blank">
                 <h1>Blog</h1>
               </a>
