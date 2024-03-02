@@ -26,7 +26,7 @@ export default function Home() {
                 <h1>Work</h1>
               </Link> */}
               <a href="https://shaunkh.xyz/" target="_blank">
-                <h1>Blog</h1>
+                <h1>blog</h1>
               </a>
             </div>
           </div>
@@ -43,19 +43,19 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col text-xl">
-          <h1>Hi, my name&apos;s Shaun.</h1>
+          <h1>hi, my name&apos;s shaun.</h1>
           <h1>
-            I build stuff at{" "}
+            i build stuff at{" "}
             <a
               className="text-[#AA00FF] hover:underline"
               href="https://elixir.xyz/"
               target="_blank"
             >
-              Elixir
+              elixir
             </a>
             .
           </h1>
-          <h1>Usually in New York.</h1>
+          <h1>usually in new york.</h1>
 
           <div className="flex w-full space-x-2 pt-2">
             <a href="https://twitter.com/shaunkhundker" target="_blank">
