@@ -58,7 +58,7 @@ export default function Home() {
           <h1>usually in new york.</h1>
 
           <div className="flex w-full space-x-2 pt-2">
-            <a href="https://twitter.com/shaunkhundker" target="_blank">
+            <a href="https://twitter.com/0xshad0wr" target="_blank">
               <FaTwitter />
             </a>
             <a href="https://github.com/shaunkh/" target="_blank">
