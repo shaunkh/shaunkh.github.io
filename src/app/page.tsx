@@ -50,7 +50,7 @@ export default function Home() {
             if you want to reach out: {""}
             <a
               className="text-[#add8e6] hover:underline"
-              href="https://twitter.com/0xshad0wr"
+              href="https://twitter.com/0xshxdow"
               target="_blank"
             >
               @0xshad0wr{" "}
