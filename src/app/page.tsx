@@ -21,7 +21,7 @@ export default function Home() {
             <div className="flex w-1/2 justify-center text-xl space-x-4">
               <a
                 className="text-[#add8e6] hover:underline"
-                href="https://shaunkh.xyz/"
+                href="https://shaunkh.bearblog.dev/"
                 target="_blank"
               >
                 <h1>blog</h1>
