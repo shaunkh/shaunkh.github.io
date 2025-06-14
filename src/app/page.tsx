@@ -53,7 +53,7 @@ export default function Home() {
               href="https://twitter.com/0xshxdow"
               target="_blank"
             >
-              @0xshad0wr{" "}
+              @0xshxdow{" "}
             </a>
           </h1>
           <div className="flex w-full space-x-2 pt-2">
