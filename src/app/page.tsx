@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaInstagram } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
@@ -63,13 +62,6 @@ export default function Home() {
               target="_blank"
             >
               <FaGithub />
-            </a>
-            <a
-              className="text-[#add8e6]"
-              href="https://www.instagram.com/shaunkhundker/"
-              target="_blank"
-            >
-              <FaInstagram />
             </a>
           </div>
         </div>
