@@ -33,7 +33,17 @@ export default function Home() {
       <div className="relative flex w-full place-items-center font-mono justify-center">
         <div className="flex flex-col text-xl">
           <h1>hi, my name is shaun.</h1>
-          <h1>i build stuff smart contracts and other stuff.</h1>
+          <h1>
+            i build smart contracts at{" "}
+            <a
+              className="text-[#fe5919] hover:underline"
+              href="https://www.ostium.com/"
+              target="_blank"
+            >
+              ostium
+            </a>
+            .
+          </h1>
           <h1>usually in new york.</h1>
           <h1>
             if you want to reach out: {""}
