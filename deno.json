@@ -1,0 +1,15 @@
+{
+  "imports": {
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.2.4/",
+    "napi-wasm": "npm:napi-wasm@^1.1.0"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "dev": "deno task lume -s"
+  },
+  "compilerOptions": {
+    "types": ["lume/types.ts"]
+  }
+}

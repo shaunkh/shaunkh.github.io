@@ -1,0 +1,138 @@
+---
+layout: layout.vto
+---
+<main class="page">
+  <div class="hero">
+    <div class="shatter" id="shatter" role="img" aria-label="Shaun Logo">
+      <img src="/aokiji-ascii.png" alt="Shaun Logo" class="sr-img">
+    </div>
+  </div>
+
+  <div class="bio">
+    <h1>hi, my name is shaun.</h1>
+    <h1>i build smart contracts at <a class="ostium" href="https://www.ostium.com/" target="_blank">ostium</a>.</h1>
+    <h1>usually in new york.</h1>
+    <h1>if you want to reach out: <a class="twitter" href="https://twitter.com/0xshxdow" target="_blank">@0xshxdow </a></h1>
+    <div class="socials">
+      <a class="twitter" href="https://github.com/shaunkh/" target="_blank" aria-label="GitHub">
+        <svg viewBox="0 0 496 512" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</main>
+
+<script>
+  (() => {
+    const root = document.getElementById("shatter");
+    if (!root) return;
+
+    const SHARD_COUNT = 500;
+    const RADIUS = 80;
+    const MAX_PUSH = 28;
+
+    const cs = getComputedStyle(root);
+    const W = parseFloat(cs.width);
+    const H = parseFloat(cs.height);
+
+    const area = (t) => {
+      const [a, b, c] = t;
+      return Math.abs((b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0])) / 2;
+    };
+    const centroid = (t) => [
+      (t[0][0] + t[1][0] + t[2][0]) / 3,
+      (t[0][1] + t[1][1] + t[2][1]) / 3,
+    ];
+
+    function splitTri(t) {
+      const cen = centroid(t);
+      let u = Math.random(), v = Math.random();
+      if (u + v > 1) { u = 1 - u; v = 1 - v; }
+      const w = 1 - u - v;
+      const [a, b, c] = t;
+      let p = [
+        u * a[0] + v * b[0] + w * c[0],
+        u * a[1] + v * b[1] + w * c[1],
+      ];
+      // Pull toward centroid for more compact, equilateral shards
+      const blend = 0.18;
+      p = [blend * p[0] + (1 - blend) * cen[0], blend * p[1] + (1 - blend) * cen[1]];
+      return [[a, b, p], [b, c, p], [c, a, p]];
+    }
+
+    // Start with a 4x2 grid of cells, each split into 2 triangles — gives
+    // ~equilateral starting shards on a 600x264 canvas.
+    const GC = 4, GR = 2;
+    let tris = [];
+    for (let r = 0; r < GR; r++) {
+      for (let c = 0; c < GC; c++) {
+        const x0 = (c * W) / GC, x1 = ((c + 1) * W) / GC;
+        const y0 = (r * H) / GR, y1 = ((r + 1) * H) / GR;
+        tris.push([[x0, y0], [x1, y0], [x1, y1]]);
+        tris.push([[x0, y0], [x1, y1], [x0, y1]]);
+      }
+    }
+
+    while (tris.length < SHARD_COUNT) {
+      let maxIdx = 0, maxA = 0;
+      for (let i = 0; i < tris.length; i++) {
+        const a = area(tris[i]);
+        if (a > maxA) { maxA = a; maxIdx = i; }
+      }
+      const t = tris[maxIdx];
+      tris.splice(maxIdx, 1, ...splitTri(t));
+    }
+
+    const shards = [];
+    for (const t of tris) {
+      const cen = centroid(t);
+      const s = document.createElement("span");
+      s.className = "shard";
+      const pts = t.map((p) => `${p[0].toFixed(2)}px ${p[1].toFixed(2)}px`).join(", ");
+      s.style.clipPath = `polygon(${pts})`;
+      s.style.backgroundSize = `${W}px ${H}px`;
+      s._cx = cen[0];
+      s._cy = cen[1];
+      s._rot = (Math.random() - 0.5) * 70;
+      root.appendChild(s);
+      shards.push(s);
+    }
+
+    let mx = -9999, my = -9999, active = false, raf = 0;
+
+    function update() {
+      raf = 0;
+      for (const s of shards) {
+        const dx = s._cx - mx, dy = s._cy - my;
+        const d = Math.hypot(dx, dy);
+        if (active && d < RADIUS) {
+          const f = 1 - d / RADIUS;
+          const ux = d ? dx / d : 0;
+          const uy = d ? dy / d : -1;
+          const tx = ux * MAX_PUSH * f;
+          const ty = uy * MAX_PUSH * f;
+          const rot = s._rot * f;
+          s.style.transform = `translate(${tx.toFixed(2)}px, ${ty.toFixed(2)}px) rotate(${rot.toFixed(2)}deg)`;
+          s.style.opacity = (1 - f * 0.35).toFixed(2);
+        } else if (s.style.transform) {
+          s.style.transform = "";
+          s.style.opacity = "";
+        }
+      }
+    }
+
+    root.addEventListener("pointermove", (e) => {
+      const r = root.getBoundingClientRect();
+      mx = (e.clientX - r.left) * (W / r.width);
+      my = (e.clientY - r.top) * (H / r.height);
+      active = true;
+      if (!raf) raf = requestAnimationFrame(update);
+    });
+
+    root.addEventListener("pointerleave", () => {
+      active = false;
+      if (!raf) raf = requestAnimationFrame(update);
+    });
+  })();
+</script>
