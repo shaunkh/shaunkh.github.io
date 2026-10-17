@@ -11,3 +11,6 @@
 .env*.local
 
 .direnv/
+.next/
+
+node_modules/

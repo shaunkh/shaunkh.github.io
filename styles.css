@@ -1,18 +1,30 @@
-*, *::before, *::after { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          "Liberation Mono", "Courier New", monospace;
+  --mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background:
-    linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
     rgb(var(--background-start-rgb));
   min-height: 100vh;
 }
@@ -33,7 +45,10 @@ body {
   justify-content: space-evenly;
   padding-bottom: 0.5rem;
 }
-.hero img { height: auto; max-width: 100%; }
+.hero img {
+  height: auto;
+  max-width: 100%;
+}
 
 .shatter {
   position: relative;
@@ -68,7 +83,9 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .shatter .shard { transition: none; }
+  .shatter .shard {
+    transition: none;
+  }
 }
 
 .bio {
@@ -78,11 +95,32 @@ body {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.bio h1 { font-size: inherit; font-weight: inherit; margin: 0; }
+.bio h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
 
-a.ostium  { color: #fe5919; text-decoration: none; }
-a.twitter { color: #add8e6; text-decoration: none; }
-a.ostium:hover, a.twitter:hover { text-decoration: underline; }
+a.superstate {
+  color: #ffffff;
+  text-decoration: none;
+}
+a.twitter {
+  color: #add8e6;
+  text-decoration: none;
+}
+a.superstate:hover,
+a.twitter:hover {
+  text-decoration: underline;
+}
 
-.socials { display: flex; gap: 0.5rem; padding-top: 0.5rem; }
-.socials a { color: #add8e6; display: inline-flex; align-items: center; }
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+}
+.socials a {
+  color: #add8e6;
+  display: inline-flex;
+  align-items: center;
+}
